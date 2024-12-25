@@ -5,21 +5,21 @@
 class Tasks < Formula
   desc "A simple CLI for task management"
   homepage "https://github.com/PriyabrataMo/tasks"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PriyabrataMo/tasks/releases/download/v0.2.1/tasks_0.2.1_darwin_amd64.tar.gz"
-      sha256 "40a342bb5bba6a666c02ce41f0f0d8458dd3cdc9f4d6894d04e1a46083e12845"
+      url "https://github.com/PriyabrataMo/tasks/releases/download/v0.2.2/tasks_0.2.2_darwin_amd64.tar.gz"
+      sha256 "30131de1626a1bd8d35b76e88a0bc9358affee5ec61f7a216c0b0ddb1e801da3"
 
       def install
         bin.install "tasks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/PriyabrataMo/tasks/releases/download/v0.2.1/tasks_0.2.1_darwin_arm64.tar.gz"
-      sha256 "e7d239be3a8596b058bb2c6060f842c4fe114f5ef892ef02ea1c64edd368a58e"
+      url "https://github.com/PriyabrataMo/tasks/releases/download/v0.2.2/tasks_0.2.2_darwin_arm64.tar.gz"
+      sha256 "333abedd53c68213b3b3f14ebd14e722ae9d313269e8c2c8e38a39e8779e7f83"
 
       def install
         bin.install "tasks"
@@ -30,8 +30,8 @@ class Tasks < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/PriyabrataMo/tasks/releases/download/v0.2.1/tasks_0.2.1_linux_amd64.tar.gz"
-        sha256 "5c6d95362a9059cd4d45da20725bb9264054d01ba4da6a3681d87cd0db5ec89c"
+        url "https://github.com/PriyabrataMo/tasks/releases/download/v0.2.2/tasks_0.2.2_linux_amd64.tar.gz"
+        sha256 "9ea484983471fd71d6a6239f28d928f8aaf5b584841577bc871bd7a7c5f9bca5"
 
         def install
           bin.install "tasks"
@@ -40,8 +40,8 @@ class Tasks < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/PriyabrataMo/tasks/releases/download/v0.2.1/tasks_0.2.1_linux_arm64.tar.gz"
-        sha256 "de2528c083b5ea8a6a9c42c30de99b202df233fa403df0b3be1efa2c4768d9ae"
+        url "https://github.com/PriyabrataMo/tasks/releases/download/v0.2.2/tasks_0.2.2_linux_arm64.tar.gz"
+        sha256 "97bc27fd348648125cd1aebb8bd2efc84b022dcaf448863ca483fa2fdbc9cb72"
 
         def install
           bin.install "tasks"
